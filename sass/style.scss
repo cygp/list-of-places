@@ -1,0 +1,18 @@
+* {box-sizing: border-box;}
+body {
+	background-color: #2C3E50;
+	color: #fff;
+	.carousel-cell {
+	  width: 100%; /* full width */
+	  height: 50vh; /* height of carousel */
+	  min-height: 250px; /* min height of carousel */
+	  margin-right: 10px;
+	  text-align: center;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  .container {
+	  	max-width: 1200px;
+	  }
+	}
+}
