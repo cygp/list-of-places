@@ -11,8 +11,12 @@ body {
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
+	  background-size: cover;
 	  .container {
 	  	max-width: 1200px;
 	  }
+	}
+	.flickity-page-dots {
+		display: none; //hide dots
 	}
 }
