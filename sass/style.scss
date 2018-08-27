@@ -33,6 +33,9 @@ body {
 	    &:hover {
 	    	background: #3c5167;
 	    }
+	    &:focus {
+      		outline: 0;
+      	}
 	}
 	.progress-bar {
   		height: 20px;
