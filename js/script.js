@@ -1,3 +1,13 @@
+// Add carousel cells by mustashe.js 
+var carouselCell = document.getElementById('template-carousel-cell').innerHTML;
+Mustache.parse(carouselCell);
+var carouselItems = '';
+var mainCarousel = document.querySelector('.main-carousel');
+for (i = 0; i < carouselCellData.length; i++) {
+	carouselItems += Mustache.render(carouselCell, carouselCellData[i]);
+};
+mainCarousel.insertAdjacentHTML('beforeend', carouselItems);
+//init flickity
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
   // options

@@ -2,7 +2,7 @@
 
 body { background-color: #2C3E50; color: #fff; }
 
-body .carousel-cell { width: 100%; /* full width */ height: 50vh; /* height of carousel */ min-height: 250px; /* min height of carousel */ margin-right: 10px; text-align: center; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; background-size: cover; }
+body .carousel-cell { width: 100%; /* full width */ height: 55vh; /* height of carousel */ min-height: 250px; /* min height of carousel */ margin-right: 10px; text-align: center; display: flex; justify-content: center; align-items: center; background-size: cover; }
 
 body .carousel-cell .container { max-width: 1200px; }
 
