@@ -2,6 +2,7 @@
 body {
 	background-color: #2C3E50;
 	color: #fff;
+	font-family: 'Lato', sans-serif;
 	.carousel-cell {
 	  width: 100%; /* full width */
 	  height: 50vh; /* height of carousel */
@@ -15,9 +16,6 @@ body {
 	  .container {
 	  	max-width: 1200px;
 	  }
-	}
-	.flickity-page-dots {
-		display: none; //hide dots
 	}
 	.restart {
 		position: absolute;
