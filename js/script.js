@@ -32,3 +32,17 @@ flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
+
+// Initialize and add the map
+window.initMap = function(){
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: carouselCellData[0]['coords']});
+  // Loop creates markers for all coords
+  for (i = 0; i < carouselCellData.length; i++) {
+		var marker = new google.maps.Marker({
+			position: carouselCellData[i]['coords'], 
+			map: map
+		});
+	};
+};
