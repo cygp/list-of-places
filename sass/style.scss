@@ -31,11 +31,14 @@ body {
 	    &:hover {
 	    	background: #3c5167;
 	    }
+	    &:focus {
+      		outline: 0;
+    	}
 	}
 	.progress-bar {
-  		height: 10px;
+  		height: 2vh;
 		width: 0;
-		background: #e74c3c; 
+		background: #e74c3c;
 	}
 	#map {
 	   width: 100%;
