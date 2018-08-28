@@ -10,12 +10,15 @@
 <body>
 	<section class="carousel">
 		<div class="container">
-			<div class="main-carousel">
-			
-			</div>
+			<div class="main-carousel"></div>
+			<div class="progress-bar"></div>
 		</div>
-		<div class="progress-bar"></div>
 		<button class="restart">restart</button>
+	</section>
+	<section class="google-map">
+		<div class="container">
+    		<div id="map"></div>
+		</div>
 	</section>
 	<script id="template-carousel-cell" type="x-tmpl-mustache">
 		<div class="carousel-cell" id="carousel-cell-{{ id }}" style="background-image: url('{{ image }}');">
@@ -31,31 +34,36 @@
 				id: '1',
 				title: 'Title 1',
 				image: 'https://fakeimg.pl/1200x600/868484/',
-				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x150" alt="Photo placeholder"> <p>Dolor sit.</p>',
+				coords: {lat: 50.061958, lng: 19.938254}
 			},
 			{
 				id: '2',
 				title: 'Title 2',
 				image: 'https://fakeimg.pl/1200x600/868484/',
-				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x150" alt="Photo placeholder"> <p>Dolor sit.</p>',
+				coords: {lat: 50.048596, lng: 19.943978}
 			},
 			{
 				id: '3',
 				title: 'Title 3',
 				image: 'https://fakeimg.pl/1200x600/868484/',
-				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x150" alt="Photo placeholder"> <p>Dolor sit.</p>',
+				coords: {lat: 50.071894, lng: 20.037577} 
 			},
 			{
 				id: '4',
 				title: 'Title 4',
 				image: 'https://fakeimg.pl/1200x600/868484/',
-				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x150" alt="Photo placeholder"> <p>Dolor sit.</p>',
+				coords: {lat: 50.044341, lng: 19.949220}  
 			},
 			{
 				id: '5',
 				title: 'Title 5',
 				image: 'https://fakeimg.pl/1200x600/868484/',
-				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
+				description: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x150" alt="Photo placeholder"> <p>Dolor sit.</p>',
+				coords: {lat: 50.051527, lng: 19.926998} 
 			}
 		];
 	</script>
@@ -63,5 +71,6 @@
 	<script src="vendor/hash.js"></script>
 	<script src="vendor/mustache.min.js"></script>
 	<script src="js/script.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-3s3ieJyknmCkXqmVhxt0veBFh9HdeQ&callback=initMap"></script>
 </body>
 </html>
