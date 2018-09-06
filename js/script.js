@@ -16,11 +16,6 @@ var flkty = new Flickity( elem, {
   pageDots: false,
   hash: true
 });
-
-// element argument can be a selector string
-//   for an individual element
-// var flkty = new Flickity( '.main-carousel', {
-// });
 // restart function
 var restart = document.querySelector('.restart');
  restart.addEventListener("click", function(event){
